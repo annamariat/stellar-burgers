@@ -14,3 +14,15 @@
   width: 100%;
   max-width: 536px;
 }
+
+@media (width <= 768px) {
+  .element {
+    flex-shrink: 0;
+    min-height: 80px;
+  }
+
+  .element_fullwidth {
+    min-width: 0;
+    max-width: 100%;
+  }
+}

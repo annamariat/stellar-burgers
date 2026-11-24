@@ -31,3 +31,11 @@ p {
     max-height: 60vh;
   }
 }
+
+@media (width <= 768px) {
+  .content {
+    flex-shrink: 0;
+    max-height: 55vh;
+    overflow-y: auto;
+  }
+}
