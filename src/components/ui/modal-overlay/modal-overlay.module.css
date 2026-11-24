@@ -2,5 +2,47 @@
   position: fixed;
   inset: 0;
   z-index: 9998;
-  background-color: rgb(0 0 0 / 60%);
+  background: radial-gradient(
+    circle at center,
+    rgb(40 20 90 / 55%) 0%,
+    rgb(0 0 0 / 80%) 100%
+  );
+  backdrop-filter: blur(3px);
+  animation: overlay-fade 0.4s ease-out both;
+}
+
+@keyframes overlay-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    animation: none;
+  }
+}
+
+.overlayClosing {
+  animation: overlay-fade-out 0.3s ease-in both;
+}
+
+@keyframes overlay-fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlayClosing {
+    animation: none;
+  }
 }

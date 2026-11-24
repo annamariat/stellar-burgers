@@ -11,8 +11,30 @@
     0 24px 32px rgb(0 0 0 / 4%),
     0 16px 24px rgb(0 0 0 / 4%),
     0 4px 8px rgb(0 0 0 / 4%),
-    0 0 1px rgb(0 0 0 / 4%);
+    0 0 1px rgb(0 0 0 / 4%),
+    0 0 60px rgb(76 76 255 / 35%);
   transform: translate(-50%, -50%);
+  animation: modal-warp 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes modal-warp {
+  0% {
+    transform: translate(-50%, -50%) scale(0.4) rotate(-6deg);
+    opacity: 0;
+    filter: blur(8px);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) scale(1.04) rotate(0.5deg);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
 .header {
@@ -37,4 +59,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal {
+    animation: none;
+  }
+}
+
+.modalClosing {
+  animation: modal-leave 0.3s ease-in both;
+}
+
+@keyframes modal-leave {
+  from {
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(0.4) rotate(6deg);
+    opacity: 0;
+    filter: blur(8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modalClosing {
+    animation: none;
+  }
 }
