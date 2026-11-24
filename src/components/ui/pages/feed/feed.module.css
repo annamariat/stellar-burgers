@@ -31,3 +31,37 @@
   width: 580px;
   overflow: hidden auto;
 }
+
+@media (width <= 768px) {
+  .containerMain {
+    max-width: 100%;
+    overflow: visible;
+  }
+
+  .titleBox {
+    flex-wrap: wrap;
+    gap: 8px;
+    box-sizing: border-box;
+    padding: 0 16px;
+  }
+
+  .main {
+    flex-direction: column;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .columnInfo {
+    order: 1;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .columnOrders {
+    order: 2;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 8px;
+  }
+}

@@ -70,3 +70,13 @@
 .total {
   margin-left: auto;
 }
+
+@media (width <= 768px) {
+  .wrap {
+    width: 100%;
+  }
+
+  .list {
+    max-height: 40vh;
+  }
+}

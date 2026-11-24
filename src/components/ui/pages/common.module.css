@@ -42,3 +42,18 @@
   color: #f00;
   text-align: center;
 }
+
+@media (width <= 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .wrapCenter {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 480px;
+    margin: 24px auto;
+    padding: 0 16px;
+  }
+}

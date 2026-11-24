@@ -66,3 +66,20 @@
 .element:last-child {
   margin-bottom: 0;
 }
+
+@media (width <= 768px) {
+  .burger_constructor {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 32px;
+  }
+
+  .elements {
+    max-height: 40vh;
+  }
+
+  .total {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

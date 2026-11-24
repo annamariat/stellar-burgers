@@ -31,3 +31,19 @@
 .detailHeader {
   text-align: center;
 }
+
+@media (width <= 768px) {
+  .app {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .message {
+    margin: 60px 16px;
+  }
+
+  .detailPageWrap {
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+}

@@ -28,3 +28,18 @@
   justify-content: center;
   width: 260px;
 }
+
+@media (width <= 768px) {
+  .article {
+    width: 100%;
+  }
+
+  .article img {
+    width: 100%;
+    height: auto;
+  }
+
+  .addButton {
+    width: 100%;
+  }
+}

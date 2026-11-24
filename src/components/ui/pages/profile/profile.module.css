@@ -14,3 +14,19 @@
 .error {
   composes: error from '../common.module.css';
 }
+
+/* двойной класс перебивает отступы утилит mt-30 и mr-15 */
+
+@media (width <= 768px) {
+  .menu.menu {
+    width: auto;
+    margin: 24px 16px 0;
+  }
+
+  .form.form {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 16px;
+    padding: 0 16px;
+  }
+}

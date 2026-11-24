@@ -36,3 +36,25 @@
   align-items: center;
   margin: 0 auto;
 }
+
+@media (width <= 768px) {
+  .menu {
+    max-width: 100%;
+  }
+
+  .menu_part_left {
+    gap: 16px;
+  }
+
+  .logo svg {
+    width: 120px;
+    height: auto;
+  }
+}
+
+@media (width <= 600px) {
+  .menu_part_left p,
+  .link_position_last p {
+    display: none;
+  }
+}

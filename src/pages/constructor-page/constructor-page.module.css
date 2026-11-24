@@ -19,3 +19,16 @@
   height: 100%;
   overflow: hidden;
 }
+
+@media (width <= 768px) {
+  .containerMain {
+    max-width: 100%;
+    overflow: visible;
+  }
+
+  .main {
+    flex-direction: column;
+    gap: 32px;
+    overflow: visible;
+  }
+}

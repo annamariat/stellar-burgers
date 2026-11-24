@@ -90,3 +90,13 @@
     animation: none;
   }
 }
+
+@media (width <= 768px) {
+  .modal {
+    box-sizing: border-box;
+    width: calc(100vw - 32px);
+    max-height: 90vh;
+    padding: 24px 16px 32px;
+    overflow-y: auto;
+  }
+}

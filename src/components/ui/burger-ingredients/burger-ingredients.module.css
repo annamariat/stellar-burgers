@@ -21,3 +21,13 @@ p {
   text-align: center;
   list-style-type: none;
 }
+
+@media (width <= 768px) {
+  .burger_ingredients {
+    max-width: 100%;
+  }
+
+  .content {
+    max-height: 60vh;
+  }
+}

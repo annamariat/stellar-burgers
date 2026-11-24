@@ -3,3 +3,10 @@
   height: 100%;
   overflow-y: scroll;
 }
+
+@media (width <= 768px) {
+  .content {
+    height: auto;
+    overflow: visible;
+  }
+}

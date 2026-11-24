@@ -66,3 +66,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media (width <= 768px) {
+  .order {
+    min-width: 0;
+  }
+}

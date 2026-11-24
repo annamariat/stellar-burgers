@@ -13,3 +13,21 @@
 .orders {
   width: 100%;
 }
+
+@media (width <= 768px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .menu.menu {
+    width: auto;
+    margin: 24px 16px 0;
+  }
+
+  .orders {
+    box-sizing: border-box;
+    padding: 0 8px;
+  }
+}
